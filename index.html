@@ -1,0 +1,287 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="Kristopher D. Heiskell — portfolio, projects, game development">
+    <title>Kristopher's Portfolio</title>
+
+    <style>
+        /* Global styles
+            Color palette
+            I like this one:
+            Deep blue: #031044
+            dark cyan: #082666
+            darkish cyan: #03728d
+            bright cyan: #21bfb0
+        */
+        :root {
+            --max-width: 1400px;
+            --accent: #222222; /*The background*/
+            --card-bg: #191919; /*The background of the containers*/
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0 0 80px;
+            background: var(--accent);
+            color: #fff;
+        }
+
+        header {
+            background: var(--accent);
+            width: 100%;
+            color: #fff;
+            padding: 20px 0 20px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: inline-flex;
+            gap: 1rem;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: underline;
+        }
+
+        .container {
+            max-width: var(--max-width);
+            margin: 1.25rem auto;
+            padding: 0 1rem;
+        }
+
+        .main-content {
+            background: var(--card-bg);
+            padding: 1.25rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,.06);
+            margin-bottom: 1rem;
+        }
+
+
+        footer {
+            background: var(--accent);
+            color: #fff;
+            text-align: center;
+            padding: 10px 10px;
+            position: fixed;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,.06);
+            bottom: 0;
+        }
+
+        /* Carousel  */
+        .carousel-container {
+            max-width: 900px;
+            width: 100%;
+            margin: 1rem auto;
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+        }
+
+        .carousel-images {
+            display: flex;
+            transition: transform .45s ease;
+        }
+
+            .carousel-images img {
+                width: 100%;
+                flex-shrink: 0;
+                display: block;
+                object-fit: contain;
+                height: auto;
+            }
+
+        .carousel-button {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(0,0,0,.45);
+            color: #fff;
+            border: none;
+            padding: .5rem .75rem;
+            font-size: 1.25rem;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+            .carousel-button.left {
+                left: 0.5rem;
+            }
+
+            .carousel-button.right {
+                right: 0.5rem;
+            }
+
+            .carousel-button[disabled] {
+                opacity: .45;
+                cursor: not-allowed;
+            }
+
+        /* Small screens */
+        @media (max-width:800px) {
+            .layout {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+<body>
+    <a id="top"></a>
+    <header>
+        <h1>Kristopher D. Heiskell</h1>
+        <!--<p>“If you can’t fix it, you don’t own it.” — Louis Rossmann</p>-->
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        
+        <section id="about" class="main-content" aria-labelledby="about-heading">
+            <h2 id="about-heading">About Me</h2>
+            <p>C#, Java, and Python programmer. The time I have spent coding has given me a fundamental understanding of code structure, syntax, and operating systems. I am an indie developer who is well versed in 3D modeling, animation, and scripting complex systems. I have spent a great deal of time troubleshooting and installing/uninstalling computer hardware/software. I am always eager to jump into projects where I can exercise my technical knowledge and increase that knowledge with others who share my interests.</p>
+
+        </section>
+
+        <section id="portfolio" class="main-content" aria-labelledby="portfolio-heading">
+            <h2 id="portfolio-heading">Portfolio</h2>
+            <ul>
+                <li>
+                    <strong>Java Stock Management (group)</strong>
+                    <p>I designed an inventory management system with a small team using Java.</p>
+                    <!-- Image Carousel -->
+                    <div class="carousel-container" aria-roledescription="carousel" aria-label="Project screenshots">
+                        <div class="carousel-images">
+                            <img src="PDFs/TypewriterMonkeysPresentation1.png" alt="Slide 1" loading="lazy">
+                            <img src="PDFs/TypewriterMonkeysPresentation2.png" alt="Slide 2" loading="lazy">
+                            <img src="PDFs/TypewriterMonkeysPresentation3.png" alt="Slide 3" loading="lazy">
+                            <img src="PDFs/TypewriterMonkeysPresentation4.png" alt="Slide 4" loading="lazy">
+                            <img src="PDFs/TypewriterMonkeysPresentation4TWO.png" alt="Slide 4.5" loading="lazy">
+                            <img src="PDFs/TypewriterMonkeysPresentation5.png" alt="Slide 5" loading="lazy">
+                            <img src="PDFs/TypewriterMonkeysPresentation6.png" alt="Slide 6" loading="lazy">
+                            <img src="PDFs/TypewriterMonkeysPresentation7.png" alt="Slide 7" loading="lazy">
+                            <img src="PDFs/TypewriterMonkeysPresentation8.png" alt="Slide 8" loading="lazy">
+                            <img src="PDFs/TypewriterMonkeysPresentation9.png" alt="Slide 9" loading="lazy">
+                            <img src="PDFs/TypewriterMonkeysPresentation9TWO.png" alt="Slide 9.5" loading="lazy">
+                            <img src="PDFs/TypewriterMonkeysPresentation10.png" alt="Slide 10" loading="lazy">
+                            <img src="PDFs/TypewriterMonkeysPresentation10TWO.png" alt="Slide 10.5" loading="lazy">
+                            <img src="PDFs/TypewriterMonkeysPresentation11.png" alt="Slide 11" loading="lazy">
+                        </div>
+                        <button class="carousel-button left" aria-label="Previous slide" type="button">&lt;</button>
+                        <button class="carousel-button right" aria-label="Next slide" type="button">&gt;</button>
+                    </div>
+
+                    <p>If the embedded slideshow doesn't work, <a href="PDFs/TypewriterMonkeysPresentation.pdf">download the presentation (PDF)</a>.</p>
+                    <p><a href="ClassProject/group-project.zip">Download project files (zip)</a></p>
+                </li>
+                <li>
+                    <strong>Computer Repair & Upgrades</strong>
+                    <p>“If you can’t fix it, you don’t own it.” <br />— Louis Rossmann <br />WIP — collecting images and write-ups.</p>
+                    <p><strong>[09/27/2025]</strong> HP victus component deep clean and additional 16GB RAM to empty slot.</p>
+                    <p><strong>[08/12/2025]</strong> !WIP! Vzio E55-E1 Backlight Replacement (or T-CON board...)</p>
+                    <p><strong>[06/17/2025]</strong> PC AMD Ryzen 5 2600x + coolmaster upgrade.</p>
+                    <p><strong>[06/15/2025]</strong> PC OS moved from HDD to new SSD. 16x2 ddr4 RAM upgrade (32 total)</p>
+                    <p><strong>[WIP] Backtracking work history:</strong> Collecting dates and hardware/software specifics...</p>
+                </li>
+                <li>
+                    <strong>Digital Design / Game Dev</strong>
+                    <p>I am a solo unity 3D and blender developer. I am currently working on a sci-fi fantasy RPG that began as a passion project in May 2024. Unity 3D project (C#), all models made in Blender; preparing a beta release on Steam.</p>
+                </li>
+            </ul>
+
+            <!-- Image Carousel -->
+            <div class="carousel-container" aria-roledescription="carousel" aria-label="Project screenshots">
+                <div class="carousel-images">
+                    <img src="GameDev/1.png" alt="Main character exploring a ruined city" loading="lazy">
+                    <img src="GameDev/2.png" alt="pic" loading="lazy">
+                    <img src="GameDev/3.png" alt="pic" loading="lazy">
+                    <img src="GameDev/4.png" alt="pic" loading="lazy">
+                    <img src="GameDev/5.png" alt="pic" loading="lazy">
+                    <img src="GameDev/6.png" alt="pic" loading="lazy">
+                    <img src="GameDev/7.png" alt="pic" loading="lazy">
+                    <img src="GameDev/8.png" alt="pic" loading="lazy">
+                    <img src="GameDev/9.png" alt="pic" loading="lazy">
+                    <img src="GameDev/10.png" alt="pic" loading="lazy">
+                    <img src="GameDev/11.png" alt="pic" loading="lazy">
+                    <img src="GameDev/12.png" alt="pic" loading="lazy">
+                    <img src="GameDev/13.png" alt="pic" loading="lazy">
+                    <img src="GameDev/14.png" alt="pic" loading="lazy">
+                    <img src="GameDev/15.png" alt="pic" loading="lazy">
+                    <img src="GameDev/16.png" alt="pic" loading="lazy">
+                    <img src="GameDev/17.png" alt="pic" loading="lazy">
+                    <img src="GameDev/18.png" alt="pic" loading="lazy">
+                    <img src="GameDev/19.png" alt="pic" loading="lazy">
+                    <img src="GameDev/20.png" alt="pic" loading="lazy">
+                    <img src="GameDev/21.png" alt="pic" loading="lazy">
+                    <img src="GameDev/22.png" alt="pic" loading="lazy">
+                    <img src="GameDev/23.png" alt="pic" loading="lazy">
+                    <img src="GameDev/24.png" alt="pic" loading="lazy">
+                    <img src="GameDev/25.png" alt="pic" loading="lazy">
+                    <img src="GameDev/26.png" alt="pic" loading="lazy">
+                    <img src="GameDev/27.png" alt="pic" loading="lazy">
+                    <img src="GameDev/28.png" alt="pic" loading="lazy">
+                </div>
+                <button class="carousel-button left" aria-label="Previous slide" type="button">&lt;</button>
+                <button class="carousel-button right" aria-label="Next slide" type="button">&gt;</button>
+            </div>
+        </section>
+            
+
+        <section id="contact" class="main-content" aria-labelledby="contact-heading">
+            <h2>Contact:</h2>
+            <a href="https://www.linkedin.com/in/kristopher-heiskell-557795390" target="_blank">
+                <i class="fab fa-linkedin"></i> Connect on LinkedIn
+            </a>
+        </section>
+    </main>
+
+    <footer><nav><a href="#top">Back to Top</a></nav></footer>
+
+    <script>
+        // Single carousel initializer for all carousels
+        document.addEventListener('DOMContentLoaded', () => {
+            document.querySelectorAll('.carousel-container').forEach(container => {
+                const images = container.querySelector('.carousel-images');
+                const slides = container.querySelectorAll('.carousel-images img');
+                const left = container.querySelector('.carousel-button.left');
+                const right = container.querySelector('.carousel-button.right');
+                let index = 0;
+
+                function update() {
+                    images.style.transform = `translateX(${-index * 100}%)`;
+                    left.disabled = index === 0;
+                    right.disabled = index === slides.length - 1;
+                }
+
+                left.addEventListener('click', () => { if (index > 0) { index--; update(); } });
+                right.addEventListener('click', () => { if (index < slides.length - 1) { index++; update(); } });
+
+                // keyboard support for accessibility
+                container.addEventListener('keydown', (e) => {
+                    if (e.key === 'ArrowLeft') left.click();
+                    if (e.key === 'ArrowRight') right.click();
+                });
+
+                // Make container focusable for keyboard nav
+                container.tabIndex = 0;
+                update();
+            });
+        });
+    </script>
+</body>
+</html>
